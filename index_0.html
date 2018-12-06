@@ -10,34 +10,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <title>Bootstrap for WebSite</title>
-  </head>
-  
-  <style>
-    #footer {
-      margin-bottom: 3rem;
-    }
-    
-    .jumbotron{
-      background-image: url(https://loremflickr.com/1200/500/abstract);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      padding: 10rem 0;
-    }
-    
-    .mastinfo {
-      _background-color: rgba(0,0,0,.5);
-      background-color: rgba(255,255,255,.3);
-      color: _aliceblue;
-      padding: 2rem;
-    }
-  </style>
-
+</head>
 
 <body>
   
 <!-- === NAVIGATION === -->
-<nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-bottom">
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#topNav">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -55,9 +33,9 @@
   
 <!-- === JUMBOTRON === -->
 <section class="jumbotron">
-  <div class="container mastinfo">
+  <div class="container">
     <div class="display-2">Bootstrap 4</div>
-    <h5 class="text-dark">Welcome to my Bootstrap 4 project. Happy bootstraping!!!</h5>
+    <p class="text-muted">Welcome to my Bootstrap 4 project. Happy bootstraping!!!</p>
     <div>
       <a href="#" class="btn btn-primary">Call to action #1</a>
       <a href="#" class="btn btn-secondary">Call to action #2</a>
@@ -70,44 +48,32 @@
 
 <section class="mb-4">
   <div class="container">
-  
    <!-- === Section Welcome ===  -->
     <div class="row">
-     
-      <div class="col-md-8">
+      <div class="col-sm-8">
         <h1>Welcome Message</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia. </p>
-        <p>Alias saepe eius inventore magnam modi a, magni fugiat, optio esse nisi. </p>
-        <p>Veniam deleniti nemo aliquid iusto, accusamus itaque. Explicabo voluptatem eum iusto est natus aliquid omnis.</p>
-        <p>Consectetur adipisicing elit. Et voluptates amet consectetur pariatur incidunt officia ratione. Voluptates corporis nostrum, ipsum, molestias laudantium vero at nam odit id dolorum facilis tempora.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia. </p><p>Alias saepe eius inventore magnam modi a, magni fugiat, optio esse nisi. </p><p>Veniam deleniti nemo aliquid iusto, accusamus itaque. Explicabo voluptatem eum iusto est natus aliquid omnis.</p>
       </div>
       
-      
-      <div class="col-md-4 mb-4">
-
-        <div class="row">
-          <div class="col-md-12 col-sm-6">
-            <h4>Technology</h4>
-            <img src="https://loremflickr.com/600/400/technology" class="img-fluid img-thumbnail" alt="Abstract">
-          </div>
-          <div class="col-md-12 col-sm-6">
-            <h4>People</h4>
-            <img src="https://loremflickr.com/600/400/people" class="img-fluid img-thumbnail" alt="People">
-
-          </div>
-        </div>
+      <div class="col-sm-4">
+        <p>Technology<br>
+        <img src="https://loremflickr.com/600/400/technology" class="img-fluid" alt="Abstract">
+        </p>
+        
+        <p>People<br>
+        <img src="https://loremflickr.com/600/400/people" class="img-fluid" alt="People">
+        </p>
       </div>
-      
     </div>
     <!-- === End Section Welcome ===  -->   
     
     
     <!-- === Section Cards ===  -->   
-    <div class="row bg-light p-3">
+    <div class="row">
      
       <!--     card1  -->
-      <div class="col-md-4 col-sm-6">
-       <div class="card mb-4">
+      <div class="col-md-4">
+       <div class="card">
          <img src="https://loremflickr.com/600/400/abstract" class="card-img-top" alt="Abstract">
          <div class="card-body">
            <h4 class="card-title">Service #1</h4>
@@ -118,8 +84,8 @@
       </div>      
       
       <!--     card2  -->
-      <div class="col-md-4 col-sm-6">
-       <div class="card mb-4">
+      <div class="col-md-4">
+       <div class="card">
          <img src="https://loremflickr.com/600/400/city" class="card-img-top" alt="Abstract">
          <div class="card-body">
            <h4 class="card-title">Service #2</h4>
@@ -131,7 +97,7 @@
       
       <!--     card3  -->
       <div class="col-md-4">
-       <div class="card mb-4">
+       <div class="card">
          <img src="https://loremflickr.com/600/400/art" class="card-img-top" alt="Abstract">
          <div class="card-body">
            <h4 class="card-title">Service #3</h4>
@@ -150,8 +116,8 @@
 
 <!--footer-->
 <footer id="footer" class="bg-dark text-light text-center" >
-  <div class="container-fluid mb-4 p-4">
-   <div class="_bg-primary mx-auto w-50">
+  <div class="container-fluid _mb-4 p-4">
+   <div class="mx-auto w-50">
     Coded by &middot; Anton Smid &middot; dec., 2018
     </div>
   </div>
